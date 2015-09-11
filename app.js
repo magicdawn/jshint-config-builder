@@ -7,7 +7,7 @@ var Router = require('impress-router');
 var router = Router();
 var serve = require('koa-static');
 var _ = require('lodash');
-var debug = require('debug')('predator:demo');
+var debug = require('debug')('jcb:app'); // jcb = jshint-config-builder
 
 // use router
 app.use(router);
