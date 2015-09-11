@@ -12,5 +12,10 @@
 {% endblock %}
 
 {% block body %}
-hello index
+  <h2>开始生成jshint 配置</h2>
+
+  <!-- placeholder -->
+  <div class="ractive-wrapper">
+  </div>
+  
 {% endblock %}
