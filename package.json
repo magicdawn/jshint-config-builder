@@ -1,0 +1,39 @@
+{
+  "name": "jshint-config-builder",
+  "version": "0.0.1",
+  "private": true,
+  "description": "jshint-config-builder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd node_modules; ln -sf ../app; ln -sf ../lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magicdawn/jshint-config-builder.git"
+  },
+  "author": "magicdawn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magicdawn/jshint-config-builder/issues"
+  },
+  "homepage": "https://github.com/magicdawn/jshint-config-builder#readme",
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "browserify": "^11.0.1",
+    "co": "^4.6.0",
+    "debug": "^2.2.0",
+    "fs-extra": "^0.24.0",
+    "glob": "^5.0.14",
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.6",
+    "impress-router": "^0.1.0",
+    "jquery": "^1.11.3",
+    "koa": "^1.0.0",
+    "koa-static": "^1.4.9",
+    "less": "^2.5.1",
+    "lodash": "^3.10.1",
+    "predator-kit": "^0.1.3",
+    "swig": "^1.4.2"
+  }
+}
