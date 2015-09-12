@@ -15,15 +15,21 @@
       margin: @half-space;
       min-height: 100px;
       cursor: pointer;
+      padding: 10px;
+      border-radius: 5px;
 
+      .default-tag{
+        display: none;
+      }
 
-      &.default{
-        background-color: @brand-info;
-        color: #fff;
+      &.default .default-tag{
+        display: block;
+        float: right;
+        color: orange;
       }
 
       &.active{
-        background-color: @brand-success;
+        background-color: @brand-info;
         color: #fff;
       }
     }

@@ -2,6 +2,17 @@
 
 var $ = require('jquery');
 var Ractive = require('ractive');
+require('../ractive_ext');
+
+// steps
+var steps = require('../steps').map(x => {
+  x.options.forEach((o, index) => {
+    if (o.isDefault) {
+      x.selected = index;
+    }
+  });
+  return x;
+});
 
 /**
  * the page object
@@ -20,7 +31,7 @@ global.Page = {
       template: require('app/index/view/client/jshint.html'),
       data: {
         currentStep: 0,
-        steps: require('../steps')
+        steps: steps
       }
     });
   },

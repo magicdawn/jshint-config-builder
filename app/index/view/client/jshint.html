@@ -1,21 +1,28 @@
-{{#with steps[currentStep] }}
+{{#with {step: steps[currentStep]} }}
+  <h3>
+    {{ step.name }} :
+  </h3>
 
-  <h3>{{ name }}</h3>
+  <div class="options">
+    {{#each step.options:index}}
+      <div class="option {{#if this.isDefault}}default{{/if}} {{#if index === step.selected}}active{{/if}}"
+        on-click="set('steps.'+currentStep+'.selected',index)">
 
-  {{#if (typeof defaultValue) === 'number'}}
-    <div class="options">
-      <div class="option default">
-        default: {{ defaultValue }}
+        <!-- default tag -->
+        <span class="glyphicon glyphicon-star default-tag" data-title='默认' decorator='bsTooltip'></span>
+
+        <!-- value -->
+        {{#if this.input}}
+          <input type="text" class="form-control" value="{{ this.value }}">
+        {{else}}
+          {{ this.value }}
+        {{/if}}
+
+        <!-- desc -->
+        <div class="desc">
+          {{ this.desc }}
+        </div>
       </div>
-      <div class="option active">
-        custom: <input type="text" value="{{ value }}">
-      </div>
-    </div>
-  {{/if}}
-
-  {{#if typeof value === 'boolean'}}
-    <div class="options">
-    </div>
-  {{/if}}
-
+    {{/each}}
+  </div>
 {{/with}}
