@@ -1,1 +1,31 @@
 // index.less
+
+// 导入 bootstrap 中的变量
+@import (reference) "../../../global/css/bootstrap";
+
+.ractive-wrapper{
+  .options{
+    @half-space: 1%;
+    margin: -@half-space;
+
+    .option{
+      border: 1px solid #abc;
+      width: 48%;
+      float: left;
+      margin: @half-space;
+      min-height: 100px;
+      cursor: pointer;
+
+
+      &.default{
+        background-color: @brand-info;
+        color: #fff;
+      }
+
+      &.active{
+        background-color: @brand-success;
+        color: #fff;
+      }
+    }
+  }
+}

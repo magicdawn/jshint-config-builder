@@ -1,0 +1,21 @@
+{{#with steps[currentStep] }}
+
+  <h3>{{ name }}</h3>
+
+  {{#if (typeof defaultValue) === 'number'}}
+    <div class="options">
+      <div class="option default">
+        default: {{ defaultValue }}
+      </div>
+      <div class="option active">
+        custom: <input type="text" value="{{ value }}">
+      </div>
+    </div>
+  {{/if}}
+
+  {{#if typeof value === 'boolean'}}
+    <div class="options">
+    </div>
+  {{/if}}
+
+{{/with}}

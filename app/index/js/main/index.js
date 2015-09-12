@@ -18,6 +18,13 @@ global.Page = {
     this.ract = global.ract = new Ractive({
       el: '.ractive-wrapper',
       template: require('app/index/view/client/jshint.html'),
+      data: {
+        currentStep: 0,
+        steps: require('../steps')
+      }
     });
   },
 };
+
+// ok
+global.Page.run();
