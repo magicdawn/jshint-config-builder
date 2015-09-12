@@ -9,14 +9,15 @@
     margin: -@half-space;
 
     .option{
-      border: 1px solid #abc;
+      border: 1px solid #ccc;
       width: 48%;
       float: left;
       margin: @half-space;
-      min-height: 100px;
+      min-height: 120px;
       cursor: pointer;
       padding: 10px;
       border-radius: 5px;
+      position: relative;
 
       .default-tag{
         display: none;
@@ -24,13 +25,26 @@
 
       &.default .default-tag{
         display: block;
-        float: right;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 20px;
         color: orange;
       }
 
       &.active{
         background-color: @brand-info;
         color: #fff;
+      }
+    }
+  }
+
+  .pager{
+    .btn{
+      width: 200px;
+
+      &:first-child{
+        margin-right: 15px;
       }
     }
   }

@@ -15,7 +15,9 @@
         {{#if this.input}}
           <input type="text" class="form-control" value="{{ this.value }}">
         {{else}}
-          {{ this.value }}
+          <h1 class="text-center">
+            {{ this.value }}
+          </h1>
         {{/if}}
 
         <!-- desc -->
@@ -24,5 +26,12 @@
         </div>
       </div>
     {{/each}}
+
+    <div class="clearfix"></div>
   </div>
 {{/with}}
+
+<div class="text-center pager">
+  <button class="btn btn-lg btn-danger" on-click='previous'>&lt;&lt;Previous</button>
+  <button class="btn btn-lg btn-success" on-click='next'>Next&gt;&gt;</button>
+</div>

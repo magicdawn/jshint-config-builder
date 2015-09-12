@@ -42,7 +42,6 @@ gulp.task('build', function() {
 
   // gulp.task could return a Promise
   return co(function*() {
-
     // less -> css
     yield predator.buildLessAsync([
       '*/css/main/**/*.less'
@@ -70,6 +69,9 @@ gulp.task('build', function() {
 
     fs.writeFileSync(__dirname + '/rev.json', JSON.stringify(rev, null, '  '), 'utf8');
     gutil.log('predator', 'rev.json writed');
+  }).catch(e => {
+    console.error(e);
+    console.error(e.stack);
   });
 });
 
