@@ -1,8 +1,10 @@
 'use strict';
 
 var Ractive = require('ractive');
-var $ = global.$ = global.jQuery = require('jquery');
+global.$ = global.jQuery = require('jquery');
 require('bootstrap/js/tooltip');
+
+/* globals $ */
 
 Ractive.decorators.bsTooltip = function(node) {
   $(node).tooltip();

@@ -8,7 +8,7 @@
 {% endblock %}
 
 {% block js %}
-<script src="/index/js/main/index_d111ebb4.js"></script>
+<script src="/index/js/main/index_6c920b14.js"></script>
 {% endblock %}
 
 {% block body %}

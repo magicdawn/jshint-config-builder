@@ -49,7 +49,7 @@ global.Page = {
       el: '.ractive-wrapper',
       template: require('app/index/view/client/jshint.html'),
       data: {
-        currentStep: 51,
+        currentStep: 0,
         steps: steps
       },
 
@@ -67,6 +67,11 @@ global.Page = {
               var selected = s.selected;
               var selectedOption = s.options[selected];
               var name = s.name;
+
+              // input string to number
+              if (selectedOption.input) {
+                selectedOption.value = Number(selectedOption.value);
+              }
 
               ret.full[name] = selectedOption.value;
 

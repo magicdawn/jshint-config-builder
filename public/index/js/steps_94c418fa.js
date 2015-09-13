@@ -36,7 +36,7 @@ module.exports = [
     options: [{
       value: 50,
       isDefault: true,
-      desc: 'hello'
+      desc: 'max error count'
     }, {
       value: 50,
       input: true
