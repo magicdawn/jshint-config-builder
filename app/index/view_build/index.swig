@@ -1,14 +1,14 @@
-{% extends "../../global/view/basic.swig" %}
+{% extends "../../global/view_build/basic.swig" %}
 
 {% set title = '首页' %}
 {% set pageKey = 'index' %}
 
 {% block css %}
-<link rel="stylesheet" href="/index/css/main/index.css">
+<link rel="stylesheet" href="/index/css/main/index_300cdcb7.css">
 {% endblock %}
 
 {% block js %}
-<script src="/index/js/main/index.js"></script>
+<script src="/index/js/main/index_d111ebb4.js"></script>
 {% endblock %}
 
 {% block body %}

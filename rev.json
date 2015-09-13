@@ -1,10 +1,10 @@
 {
   "global/css/main/base.css": "global/css/main/base_9be47ed7.css",
-  "index/css/main/index.css": "index/css/main/index_9902153d.css",
-  "index/js/main/index.js": "index/js/main/index_fe693fb5.js",
+  "index/css/main/index.css": "index/css/main/index_300cdcb7.css",
+  "index/js/main/index.js": "index/js/main/index_d111ebb4.js",
   "global/js/main/index.js": "global/js/main/index_85bb5e8a.js",
   "index/js/ractive_ext.js": "index/js/ractive_ext_50315862.js",
-  "index/js/steps.js": "index/js/steps_77edbb82.js",
+  "index/js/steps.js": "index/js/steps_8b9500e6.js",
   "global/css/bootstrap.less": "global/css/bootstrap_73d08262.less",
   "global/css/layout.less": "global/css/layout_7f019da6.less"
 }
