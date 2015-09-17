@@ -18,7 +18,7 @@
     "url": "https://github.com/magicdawn/jshint-config-builder/issues"
   },
   "engines": {
-    "node": "4.0.0"
+    "node": "4.*"
   },
   "homepage": "https://github.com/magicdawn/jshint-config-builder#readme",
   "dependencies": {
