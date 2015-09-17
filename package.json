@@ -17,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/magicdawn/jshint-config-builder/issues"
   },
+  "engines": {
+    "node": "4.*"
+  },
   "homepage": "https://github.com/magicdawn/jshint-config-builder#readme",
   "dependencies": {
     "bluebird": "^2.9.34",
