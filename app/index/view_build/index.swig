@@ -4,7 +4,7 @@
 {% set pageKey = 'index' %}
 
 {% block css %}
-<link rel="stylesheet" href="/index/css/main/index_300cdcb7.css">
+<link rel="stylesheet" href="/index/css/main/index_0f3d0821.css">
 {% endblock %}
 
 {% block js %}

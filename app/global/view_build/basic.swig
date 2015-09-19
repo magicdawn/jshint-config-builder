@@ -5,7 +5,7 @@
   <title>{{ title }}</title>
 
   {# css #}
-  <link rel="stylesheet" href="/global/css/main/base_9be47ed7.css">
+  <link rel="stylesheet" href="/global/css/main/base_250747ae.css">
   {% block css %}
   {% endblock %}
 </head>
